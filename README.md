@@ -15,6 +15,8 @@ Rolloff, Mel Spectrogram, MFCC e Chroma STFT. Os sons foram separados em dois gr
 Após a extração das características foi gerado um arquivo cuja extensão ".arff" pode ser lida pelo Weka, uma
 plataforma com diversas coleções de algoritmos de Machine Learning e Data Mining escrita em Java na Universidade de Waikato, Nova Zelândia
 
+Os sons de testes são classificados de acordo com os parâmetros estabelecidos para o algoritmo Multilayer Perceptron.
+
 
 ### Instalação
 
