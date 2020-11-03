@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import Header from './Header'
 import Content from './Content'
-import { CardTitle } from 'reactstrap'
 import Loading from '../../components/Loading'
 
 const Classify = (props) => {
     const [loading, setLoading] = useState(false)
-    const [currentAudio, setCurrentAudio] = useState({ file: "cats/cat_3.wav" })
+    const [currentAudio, setCurrentAudio] = useState({ file: "cat_3.wav" })
     const [result, setResult] = useState({ cat: 0, dog: 0 })
     const [features, setFeatures] = useState([
         { title: "Zero Crossing", value: 0 },
@@ -35,10 +34,10 @@ const Classify = (props) => {
                     }).then(res => res.json())
                     console.log(response)
                     if (response.status === 200) {
-                        setCurrentAudio(audio)
                         setResult(response.result)
                         setFeatures(response.features)
                         setSettings(newSettings)
+                        setCurrentAudio(audio)
                     }
                     setLoading(false)
                 } catch (e) {
@@ -47,29 +46,7 @@ const Classify = (props) => {
             })()
 
         }
-    }, [])
-
-    // const onExtract = async () => {
-    //     // const response = await fetch('/extract/sound/cat_32').then(response => response.json())
-    //     // console.log(response)
-    //     const response = await fetch('/train').then(res => res.json())
-    //     console.log(response)
-    //     setExtract(response.message)
-    // }
-    const onClassify = async () => {
-        // const response = await fetch('/extract/sound/cat_32').then(response => response.json())
-        // console.log(response)
-        const response = await fetch('/extract/sound/', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(currentAudio)
-        }).then(res => res.json())
-        console.log(response)
-        // setResult(response.result)
-    }
-
+    },[props.location.state, settings])
 
 
     return (

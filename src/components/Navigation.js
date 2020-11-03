@@ -1,11 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { Link, withRouter } from 'react-router-dom'
-import { useHistory, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const Navigation = () => {
-    let history = useHistory()
     let location = useLocation()
-    const [active,setActive] = useState()
     
     const onActive = (path) => {
         let current = location.pathname
@@ -14,9 +12,6 @@ const Navigation = () => {
         }else return ""
     }
     
-    console.log(location)
-
-
     return (
         <section id="navigation">
             <div className={"nav-item " + onActive("/home")}>

@@ -9,7 +9,6 @@ import Classify from './classify'
 
 const App = (props) => {
     
-
     return (
         <>
             <Navigation />

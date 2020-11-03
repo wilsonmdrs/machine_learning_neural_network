@@ -4,7 +4,6 @@ import Content from './Content'
 
 const Features = (props) => {
     
-
     return (
         <section id="features">
             <Header />

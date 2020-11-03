@@ -1,6 +1,4 @@
 import React from 'react'
-import '../../assets/css/blur.css'
-
 
 const Content = (props) => {
 

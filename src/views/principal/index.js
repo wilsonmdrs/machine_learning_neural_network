@@ -4,7 +4,6 @@ import Content from './Content'
 
 const Principal = (props) => {
     
-
     return (
         <section id="home">
             <Header />

@@ -27,6 +27,7 @@ yarn-error.log*
 package-lock.json
 yarn.lock
 
-#python
-venv
-__pycache_
+#python server
+server/venv
+server/.idea
+server/__pycache_

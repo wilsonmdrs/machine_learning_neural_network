@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react'
-import '../../assets/css/blur.css'
+import React from 'react'
 
 const Content = (props) => {
 
@@ -11,7 +10,7 @@ const Content = (props) => {
                     <p className="subtitle">Zero Crossing</p><p>É um ponto onde a onda sonora cruza o eixo de nivel zero.</p>
                 </div>
                 <div className="image">
-                    <img src={require('../../assets/images/features/zero-crossing.svg')} />
+                    <img src={require('../../assets/images/features/zero-crossing.svg')} alt="zero-crossing"/>
                 </div>
             </div>
             <div className="body">
@@ -20,7 +19,7 @@ const Content = (props) => {
                     <p>É a frequência abaixo da qual se encontra uma porcentagem especificada da energia espectral total, por exemplo, 85%.</p>
                 </div>
                 <div className="image">
-                    <img src={require('../../assets/images/features/spectral-centroid.png')} />
+                    <img src={require('../../assets/images/features/spectral-centroid.png')} alt="spectrtal-rolloff" />
                 </div>
             </div>
             <div className="body">
@@ -31,7 +30,7 @@ const Content = (props) => {
                     ele tem uma conexão robusta com a impressão de brilho de um som</p>
                 </div>
                 <div className="image">
-                    <img src={require('../../assets/images/features/spectral-rolloff.png')} />
+                    <img src={require('../../assets/images/features/spectral-rolloff.png')} alt="spectral-centroid" />
                 </div>
             </div>
             <div className="body">
@@ -45,7 +44,7 @@ const Content = (props) => {
                     </p>
                 </div>
                 <div className="image">
-                    <img src={require('../../assets/images/features/mel-spectrogram.png')} />
+                    <img src={require('../../assets/images/features/mel-spectrogram.png')} alt="mel-spectogram" />
                 </div>
             </div>
             <div className="body">
@@ -57,7 +56,7 @@ const Content = (props) => {
                     </p>
                 </div>
                 <div className="image">
-                    <img src={require('../../assets/images/features/mfcc.jpg')} />
+                    <img src={require('../../assets/images/features/mfcc.jpg')} alt="mfcc" />
                 </div>
             </div>
             <div className="body">
@@ -71,7 +70,7 @@ const Content = (props) => {
                         </p>
                 </div>
                 <div className="image">
-                    <img src={require('../../assets/images/features/chroma-stft.jpeg')} />
+                    <img src={require('../../assets/images/features/chroma-stft.jpeg')} alt="cromastft" />
                 </div>
             </div>
         </div>

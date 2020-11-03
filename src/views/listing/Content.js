@@ -1,5 +1,4 @@
 import React from 'react'
-import '../../assets/css/blur.css'
 import AudioPlayer from 'react-h5-audio-player';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 const Content = ({audios, setClassify}) => {
@@ -20,7 +19,6 @@ const Content = ({audios, setClassify}) => {
                         <div className="player">
                             <AudioPlayer
                                 src={item.path}
-                                // onPlay={e => console.log("onPlay")}
                             />
                         </div>
                         <div className="classify-button" onClick={() => setClassify(item)}>
@@ -42,7 +40,6 @@ const Content = ({audios, setClassify}) => {
                         <div className="player">
                             <AudioPlayer
                                 src={item.path}
-                                // onPlay={e => console.log("onPlay")}
                             />
                         </div>
                         <div className="classify-button" onClick={() => setClassify(item)}>

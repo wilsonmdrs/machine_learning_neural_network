@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import '../../assets/css/blur.css'
 import AudioPlayer from 'react-h5-audio-player';
 
 const Content = (props) => {
@@ -79,7 +78,6 @@ const Content = (props) => {
             <div className="player">
                 <AudioPlayer
                     src={props.path}
-                // onPlay={e => console.log("onPlay")}
                 />
             </div>
         </div>

@@ -27,10 +27,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "start-api": "cd api && venv/bin/flask run ",
+    "start-server": "cd server && venv/bin/flask run ",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "install-server": "cd server && python3 -m venv venv && source venv/bin/activate && pip3 install -r requirements.txt"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -47,5 +48,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://git.heroku.com/rna-neural-network.git"
+  "proxy": "http://localhost:5000"
 }
