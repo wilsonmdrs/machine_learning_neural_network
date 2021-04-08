@@ -21,7 +21,7 @@ Os sons de testes são classificados de acordo com os parâmetros estabelecidos 
 ### Instalação
 
 ### Pré-requisitos
-* JAVA RUNTIME E JKD
+* JAVA RUNTIME E JDK
 * Node.js
 * Yarn
 * Python 3
